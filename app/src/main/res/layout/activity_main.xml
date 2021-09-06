@@ -7,12 +7,119 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tv_text_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Здесь"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_text_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2"/>
+
+    <TextView
+        android:id="@+id/tv_text_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="мог быть"
+        android:textSize="32sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_text_1"
+        app:layout_constraintEnd_toStartOf="@id/tv_text_3"
+        app:layout_constraintStart_toEndOf="@id/tv_text_1"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="164dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="забор"
+        android:textSize="40sp"
+        app:layout_goneMarginLeft="175dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_text_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_text_2"
+        tools:layout_editor_absoluteX="271dp"
+        tools:layout_editor_absoluteY="164dp" />
+
+    <TextView
+        android:id="@+id/tv_text_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="i'm sneak"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        app:layout_constraintVertical_bias="0.8"/>
+
+
+    <TextView
+        android:id="@+id/tv_text_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="he sneak"
+        app:layout_constraintStart_toEndOf="@+id/tv_text_4"
+        app:layout_constraintTop_toTopOf="@+id/tv_text_4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Хорошего человека должно быть много"
+        android:textSize="32dp"
+        android:maxHeight="100dp"
+        android:maxWidth="200dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_chain_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Цепью"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_chain_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+    <TextView
+        android:id="@+id/tv_chain_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Скованы"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_chain_3"
+        app:layout_constraintStart_toEndOf="@id/tv_chain_1" />
+
+    <TextView
+        android:id="@+id/tv_chain_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Целью"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_chain_4"
+        app:layout_constraintStart_toEndOf="@id/tv_chain_2"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:id="@+id/tv_chain_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Связаны"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_chain_3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
